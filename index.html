@@ -6,6 +6,7 @@
     <title>Madison Variety</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <!-- Header -->
@@ -25,8 +26,9 @@
             </div>
         </div>
         <div class="date">
-            <p>March 07, 2025 | 10:37:31</p>
+            <p id="clock">March 07, 2025 | 10:37:31</p>
         </div>
+        
         <!-- Text-Based Navbar -->
         <nav class="text-nav">
             <a href="our-story.html" class="nav-item">Our Story</a>
@@ -41,32 +43,74 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="hero">
-            <h1>Working Together for a Better Variety</h1>
-            <p>Your local go-to for all your needs - our store works with you, your friends, or your family.</p>
-            <button class="learn-more">Learn More</button>
-            <img src="storefront.jpg" alt="Madison Variety Storefront" class="store-image">
-        </section>
+    <section class="location-section">
+        <h2>Visit Us</h2>
+        <p>We are located at the heart of Freehold, NJ. Come visit us!</p>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1234567890123!2d-74.12345678901234!3d40.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c1234567890123%3A0x1234567890123456!2s30%20W%20Main%20St%2C%20Freehold%2C%20NJ%2007728!5e0!3m2!1sen!2sus!4v1611234567890!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        
+    </section>
 
-        <!-- Store Hours Section -->
-        <section class="hours-section">
-            <div class="hours">
-                <h2>Store Hours</h2>
-                <p>Mon - Fri: 9:00 AM - 7:00 PM</p>
-                <p>Sat: 9:00 AM - 4:00 PM</p>
-                <p>Sun: Closed</p>
+
+
+
+    <main>
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <div class="reviews-header">
+                <h2>Customer Reviews</h2>
+                <p>See what our customers have to say about their experience</p>
             </div>
-            <div class="refill-section">
-                <h2>Refill Supplies</h2>
-                <p>Refill as a guest using the store items.</p>
-                <button class="click-here">Click Here</button>
+            
+            <div class="reviews-carousel">
+                <button class="carousel-controls prev">←</button>
+                <button class="carousel-controls next">→</button>
+                
+                <div class="reviews-container">
+                    <!-- Review Card 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="path/to/reviewer1.jpg" alt="Reviewer" class="reviewer-image">
+                            <div class="reviewer-info">
+                                <h3 class="reviewer-name">John Doe</h3>
+                                <span class="review-date">March 15, 2024</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                        <p class="review-content">"Amazing service! The staff was incredibly friendly and helpful. I'll definitely be coming back!"</p>
+                        <span class="review-category">Service</span>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="path/to/reviewer2.jpg" alt="Reviewer" class="reviewer-image">
+                            <div class="reviewer-info">
+                                <h3 class="reviewer-name">Jane Smith</h3>
+                                <span class="review-date">March 10, 2024</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                        <p class="review-content">"The quality of products is outstanding. Great selection and competitive prices!"</p>
+                        <span class="review-category">Products</span>
+                    </div>
+
+                    <!-- Add more review cards as needed -->
+                </div>
             </div>
-            <div class="new-section">
-                <h2>New Items</h2>
-                <p>Check out the latest and greatest items.</p>
-                <button class="click-here">Click Here</button>
+
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
         </section>
     </main>
@@ -74,5 +118,7 @@
     <footer>
         <p>© 2025 Madison Variety. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
