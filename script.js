@@ -1,3 +1,4 @@
+// Carousel Functionality
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.reviews-container');
     const cards = document.querySelectorAll('.review-card');
@@ -37,43 +38,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Optional: Auto-play
-    setInterval(nextSlide, 5000);
+    setInterval(nextSlide, 100000);
+
+    // Clock Functionality
+    const startDate = new Date("March 18, 2025 10:32:31"); // Your specified start date
+    const startTimeMs = startDate.getTime(); // Start time in milliseconds
+
+    function updateClock() {
+        const clockElement = document.getElementById('clock');
+        
+        // Calculate the difference between the current system time and the start time
+        const now = new Date();
+        const currentTimeMs = now.getTime();
+        const timeDifferenceMs = currentTimeMs - startTimeMs;
+        
+        // Create a new date object starting from the start date and add the time difference
+        const adjustedTime = new Date(startDate.getTime() + timeDifferenceMs);
+        
+        // Format the date
+        const options = { month: 'long', day: '2-digit', year: 'numeric' };
+        const dateString = adjustedTime.toLocaleDateString('en-US', options);
+        
+        // Format the time (24-hour format)
+        const hours = adjustedTime.getHours().toString().padStart(2, '0');
+        const minutes = adjustedTime.getMinutes().toString().padStart(2, '0');
+        const seconds = adjustedTime.getSeconds().toString().padStart(2, '0');
+        const timeString = `${hours}:${minutes}:${seconds}`;
+        
+        // Combine date and time
+        clockElement.textContent = `${dateString} | ${timeString}`;
+    }
+
+    // Update the clock immediately and then every second
+    updateClock(); // Initial call
+    setInterval(updateClock, 1000); // Update every 1 second
 });
-
-
-// clock.js
-
-// Set your custom starting date and time here
-const startDate = new Date("March 18, 2025 10:32:31"); // Adjust this to your desired start time
-const startTimeMs = startDate.getTime(); // Get the starting time in milliseconds
-
-// Store the time when the script first runs
-const scriptStartTime = Date.now();
-
-function updateClock() {
-    const clockElement = document.getElementById('clock');
-    
-    // Calculate elapsed time since the script started (in milliseconds)
-    const elapsedMs = Date.now() - scriptStartTime;
-    
-    // Add elapsed time to the starting time
-    const currentTimeMs = startTimeMs + elapsedMs;
-    const now = new Date(currentTimeMs);
-    
-    // Format the date
-    const options = { month: 'long', day: '2-digit', year: 'numeric' };
-    const dateString = now.toLocaleDateString('en-US', options);
-    
-    // Format the time (24-hour format)
-    const hours = now.getHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    const seconds = now.getSeconds().toString().padStart(2, '0');
-    const timeString = `${hours}:${minutes}:${seconds}`;
-    
-    // Combine date and time
-    clockElement.textContent = `${dateString} | ${timeString}`;
-}
-
-// Update the clock immediately and then every second
-updateClock(); // Initial call
-setInterval(updateClock, 1000); // Update every 1 second

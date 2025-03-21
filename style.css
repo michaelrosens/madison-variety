@@ -1,7 +1,7 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
+    font-family: "Bodoni Moda", serif;
     padding: 0;
+    font-weight: bolder;
     background: linear-gradient(135deg, #f8f9fa, #ffe6f0);
     color: #2c3e50;
     min-height: 100vh;
@@ -9,6 +9,14 @@ body {
     flex-direction: column;
 }
 
+@font-face {
+    font-family: 'Bodoni Poster';
+    src: url('Bodoni Poster/Bodoni Poster.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -48,7 +56,7 @@ body {
     margin: 4px 0;
     font-size: 0.95em;
     color: #495057;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Bodoni Moda", serif;
     line-height: 1.4;
     transition: color 0.3s ease;
 }
@@ -63,83 +71,6 @@ body {
 .contact-info {
     text-align: right;
     padding-left: 20px;
-}
-.map-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.map-container iframe {
-    border: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.map-container iframe:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.location-section {
-    padding: 40px 20px;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-
-.location-section h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2em;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.location-section p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1em;
-    color: #495057;
-    margin-bottom: 20px;
-}
-
-.location-info {
-    margin-top: 20px;
-}
-
-.location-info p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    color: #495057;
-    margin: 10px 0;
-}
-
-.location-info strong {
-    font-family: 'Poppins', sans-serif;
-    color: #2c3e50;
-    font-weight: 600;
-}
-
-.map-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.map-container iframe {
-    border: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.map-container iframe:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .contact-info p {
@@ -182,6 +113,7 @@ body {
 
 .date {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     background: #2c3e50;
     color: #fff;
     padding: 10px 0;
@@ -191,6 +123,7 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation Bar */
 .text-nav {
     display: flex;
     background: #2c3e50;
@@ -238,6 +171,49 @@ body {
     width: 80%;
 }
 
+/* Location Section */
+.location-section {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0); /* Match body gradient */
+    text-align: center;
+}
+
+.location-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.location-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.map-container iframe {
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-container iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
 .main-content {
     flex: 1;
     padding: 40px;
@@ -287,7 +263,7 @@ body {
 }
 
 .learn-more {
-    background: #3498db;
+    background: #2c3e50; /* Match site color */
     border: none;
     padding: 12px 30px;
     font-family: 'Poppins', sans-serif;
@@ -313,7 +289,7 @@ body {
 }
 
 .learn-more:hover {
-    background: #2980b9;
+    background: #1a252f; /* Slightly darker shade */
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -335,8 +311,9 @@ body {
     transform: scale(1.02);
 }
 
+/* Reviews Section */
 .reviews-section {
-    background: #ffffff;
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0); /* Match body gradient */
     padding: 40px 20px;
     margin: 0 0 40px 0;
     border-radius: 12px;
@@ -356,7 +333,7 @@ body {
 }
 
 .reviews-header p {
-    color: #666;
+    color: #495057;
     font-size: 1.1em;
 }
 
@@ -382,6 +359,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     border: 1px solid #e9ecef;
+    background: linear-gradient(135deg, #ffffff, #fff5f7); /* Subtle pink tint */
 }
 
 .review-card:hover {
@@ -401,6 +379,7 @@ body {
     border-radius: 50%;
     margin-right: 15px;
     object-fit: cover;
+    /* Removed the border */
 }
 
 .reviewer-info {
@@ -414,21 +393,80 @@ body {
     margin: 0;
 }
 
+.review-count {
+    font-size: 0.85em;
+    color: #666;
+    font-style: italic;
+    display: block;
+    margin-top: 2px;
+}
+
 .review-date {
     font-size: 0.9em;
     color: #666;
+    display: block;
+    margin-top: 2px;
 }
 
 .review-rating {
-    color: #ffc107;
+    color: #ff6f61; /* Pink accent to match logo */
     font-size: 1.2em;
     margin: 10px 0;
 }
 
 .review-content {
+    font-family: 'Poppins', sans-serif;
     color: #495057;
     line-height: 1.6;
     font-size: 1em;
+}
+
+.reviewer-image-initials {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.jones-initials {
+    background-color: #ff6200; /* Orange for Jones Rasmussen, matching Kary Deluga */
+}
+
+.thomas-initials {
+    background-color: #8b4513; /* Brown for Thomas Maindelle (saddlebrown) */
+}
+
+.kary-initials {
+    background-color: #ff6200; /* Orange for Kary Deluga, already added previously */
+}
+
+.adam-initials {
+    background-color: #90ee90; /* Light green for Adam Valvo */
+}
+
+.lk-initials {
+    background-color: #006400; /* Dark green for LK */
+}
+
+
+
+.review-category {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #2c3e50; /* Match site color */
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin-top: 15px;
 }
 
 .carousel-controls {
@@ -437,7 +475,7 @@ body {
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background: #fff;
+    background: #2c3e50; /* Match site color */
     border: none;
     border-radius: 50%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -447,10 +485,11 @@ body {
     justify-content: center;
     transition: all 0.3s ease;
     z-index: 10;
+    color: #fff;
 }
 
 .carousel-controls:hover {
-    background: #f8f9fa;
+    background: #1a252f; /* Slightly darker shade */
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -479,179 +518,11 @@ body {
 }
 
 .dot.active {
-    background: #3498db;
+    background: #2c3e50; /* Match site color */
     transform: scale(1.2);
 }
 
-.reviews-section {
-    background: #ffffff;
-    padding: 40px 20px;
-    margin: 0 0 40px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.reviews-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.reviews-header h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2em;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.reviews-header p {
-    color: #666;
-    font-size: 1.1em;
-}
-
-.reviews-carousel {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0 40px;
-}
-
-.reviews-container {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 20px;
-}
-
-.review-card {
-    min-width: 100%;
-    background: #fff;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    border: 1px solid #e9ecef;
-}
-
-.review-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.review-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.reviewer-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
-    object-fit: cover;
-}
-
-.reviewer-info {
-    flex: 1;
-}
-
-.reviewer-name {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    color: #2c3e50;
-    margin: 0;
-}
-
-.review-date {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.review-rating {
-    color: #ffc107;
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.review-content {
-    color: #495057;
-    line-height: 1.6;
-    font-size: 1em;
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    z-index: 10;
-}
-
-.carousel-controls:hover {
-    background: #f8f9fa;
-    transform: translateY(-50%) scale(1.1);
-}
-
-.carousel-controls.prev {
-    left: 0;
-}
-
-.carousel-controls.next {
-    right: 0;
-}
-
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 20px;
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #dee2e6;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.dot.active {
-    background: #3498db;
-    transform: scale(1.2);
-}
-
-.review-category {
-    display: inline-block;
-    padding: 4px 12px;
-    background: #e9ecef;
-    color: #495057;
-    border-radius: 20px;
-    font-size: 0.85em;
-    margin-top: 15px;
-}
-
-
-.review-category {
-    display: inline-block;
-    padding: 4px 12px;
-    background: #e9ecef;
-    color: #495057;
-    border-radius: 20px;
-    font-size: 0.85em;
-    margin-top: 15px;
-}
-
+/* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
