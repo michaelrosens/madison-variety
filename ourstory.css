@@ -1,0 +1,650 @@
+/* Our Story Page Styles */
+.our-story-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.our-story-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.timeline-item {
+    flex-basis: calc(25% - 20px);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.timeline-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.store-history {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.store-history h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.store-history p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #495057;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-item {
+        flex-basis: 100%;
+    }
+}
+
+body {
+    font-family: "Bodoni Moda", serif;
+    padding: 0;
+    font-weight: bolder;
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0);
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'Bodoni Poster';
+    src: url('Bodoni Poster/Bodoni Poster.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    height: 70px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.hours-info {
+    text-align: center;
+    padding: 0 10px;
+    border-left: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.hours-info:hover {
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.hours-info p {
+    margin: 4px 0;
+    font-size: 0.95em;
+    color: #495057;
+    font-family: "Bodoni Moda", serif;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.hours-info strong {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.contact-info {
+    text-align: right;
+    padding-left: 20px;
+}
+
+.contact-info p {
+    margin: 4px 0;
+    font-size: 0.95em;
+    color: #495057;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.contact-info p:hover {
+    color: #2c3e50;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.contact-info a:hover {
+    color: #2980b9;
+}
+
+.contact-info a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.contact-info a:hover::after {
+    width: 100%;
+}
+
+.date {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.95em;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+.text-nav {
+    display: flex;
+    background: #2c3e50;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover {
+    color: #fff;
+}
+
+.nav-item:hover::after {
+    width: 80%;
+}
+
+/* Location Section */
+.location-section {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0); /* Match body gradient */
+    text-align: center;
+}
+
+.location-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.location-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.map-container iframe {
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-container iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.hero {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 60px 30px;
+    position: relative;
+    margin: 0 0 40px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    position: relative;
+}
+
+.learn-more {
+    background: #2c3e50; /* Match site color */
+    border: none;
+    padding: 12px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.learn-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.learn-more:hover {
+    background: #1a252f; /* Slightly darker shade */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.learn-more:hover::before {
+    left: 100%;
+}
+
+.store-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.store-image:hover {
+    transform: scale(1.02);
+}
+
+/* Reviews Section */
+.reviews-section {
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0); /* Match body gradient */
+    padding: 40px 20px;
+    margin: 0 0 40px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.reviews-header p {
+    color: #495057;
+    font-size: 1.1em;
+}
+
+.reviews-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.reviews-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+.review-card {
+    min-width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    background: linear-gradient(135deg, #ffffff, #fff5f7); /* Subtle pink tint */
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviewer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    /* Removed the border */
+}
+
+.reviewer-info {
+    flex: 1;
+}
+
+.reviewer-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.review-count {
+    font-size: 0.85em;
+    color: #666;
+    font-style: italic;
+    display: block;
+    margin-top: 2px;
+}
+
+.review-date {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    margin-top: 2px;
+}
+
+.review-rating {
+    color: #ff6f61; /* Pink accent to match logo */
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.review-content {
+    font-family: 'Poppins', sans-serif;
+    color: #495057;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.reviewer-image-initials {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.jones-initials {
+    background-color: #ff6200; /* Orange for Jones Rasmussen, matching Kary Deluga */
+}
+
+.thomas-initials {
+    background-color: #8b4513; /* Brown for Thomas Maindelle (saddlebrown) */
+}
+
+.kary-initials {
+    background-color: #ff6200; /* Orange for Kary Deluga, already added previously */
+}
+
+.adam-initials {
+    background-color: #90ee90; /* Light green for Adam Valvo */
+}
+
+.lk-initials {
+    background-color: #006400; /* Dark green for LK */
+}
+
+
+
+.review-category {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #2c3e50; /* Match site color */
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin-top: 15px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #2c3e50; /* Match site color */
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    color: #fff;
+}
+
+.carousel-controls:hover {
+    background: #1a252f; /* Slightly darker shade */
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-controls.prev {
+    left: 0;
+}
+
+.carousel-controls.next {
+    right: 0;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.text-content {
+    flex: 2;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #dee2e6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #2c3e50; /* Match site color */
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2c3e50;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
