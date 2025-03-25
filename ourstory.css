@@ -27,6 +27,7 @@
 }
 
 .timeline-item img {
+    height: 306px; /* Set a fixed height */
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -608,11 +609,12 @@ body {
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Set a fixed width */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image fills the area while maintaining aspect ratio */
+    border-radius: 10px; /* Optional: Gives a rounded corner effect */
 }
+
 
 .caption {
     font-size: 0.9em;
