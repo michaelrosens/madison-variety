@@ -1,86 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lottery - Madison Variety</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
-    <link rel="stylesheet" href="/lottery/lottery.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lottery - Madison Variety</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="/lottery/lottery.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
+
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-top">
-            <a href="/index.html">
-                <img src="/pfp/newmadison.png" alt="Madison Variety Logo" class="logo">
-            </a>
-            <div class="hours-info">
-                <p><strong>Store Hours:</strong></p>
-                <p>Mon - Fri: 9:00 AM <strong>-</strong> 7:00 PM</p>
-                <p>Sat: 9:00 AM <strong>-</strong> 4:00 PM</p>
-                <p>Sun: Closed</p>
-            </div>
-            <div class="contact-info">
-                <p>For more inquiries, call us: +1 (732) 333-0226</p>
-                <p>Info@MadisonVariety.com</p>
-                <p>30 W Main St, Freehold, NJ 07728</p>
-            </div>
+  <!-- Header -->
+  <header>
+    <div class="header-top">
+      <a href="/index.html">
+        <img src="/pfp/newmadison.png" alt="Madison Variety Logo" class="logo">
+      </a>
+      <div class="hours-info">
+        <p><strong>Store Hours:</strong></p>
+        <p>Mon - Fri: 9:00 AM <strong>-</strong> 7:00 PM</p>
+        <p>Sat: 9:00 AM <strong>-</strong> 4:00 PM</p>
+        <p>Sun: Closed</p>
+      </div>
+      <div class="contact-info">
+        <p>For more inquiries, call us: +1 (732) 333-0226</p>
+        <p>Info@MadisonVariety.com</p>
+        <p>30 W Main St, Freehold, NJ 07728</p>
+      </div>
+    </div>
+    <div class="date">
+      <p id="clock">March 25, 2025 | 11:52:31</p>
+    </div>
+
+    <!-- Text-Based Navbar -->
+    <nav class="text-nav">
+      <a href="/our-story.html" class="nav-item">Our Story</a>
+      <a href="/bus-tickets.html" class="nav-item">Bus Tickets</a>
+      <a href="/lottery/lottery.html" class="nav-item">Lottery</a>
+      <a href="/work-supplies.html" class="nav-item">Work Supplies</a>
+      <a href="/social-area.html" class="nav-item">Social Area</a>
+      <a href="/snacks.html" class="nav-item">Snacks</a>
+      <a href="/drinks.html" class="nav-item">Drinks</a>
+      <a href="/nicotine-products.html" class="nav-item">Nicotine Products</a>
+      <a href="/stamps.html" class="nav-item">Stamps</a>
+    </nav>
+  </header>
+
+  <main>
+    <main id="app">
+      <section class="lottery-section">
+        <h1>Latest Lottery Results</h1>
+        <div v-for="lottery in lotteries" :key="lottery.name" class="lottery-result">
+          <h2>{{ lottery.name }}</h2>
+          <p>Numbers: {{ lottery.numbers }}</p>
+          <p>Jackpot: {{ lottery.jackpot }}</p>
+          <p>Last Updated: {{ lottery.lastUpdated }}</p>
         </div>
-        <div class="date">
-            <p id="clock">March 25, 2025 | 11:52:31</p>
+      </section>
+
+      <div class="winner-announcement">
+        🎉 WE HAD A $15,000 LOTTERY WINNER AT OUR STORE! 🎉
+      </div>
+
+      <section class="lottery-list">
+        <h2>Lotteries We Offer</h2>
+        <div class="lottery-grid">
+          <a href="https://www.powerball.com/" class="lottery-box" target="_blank">
+            <img src="/pfp/Powerball-removebg-preview.png" alt="Powerball Logo">
+            <span class="balls">Powerball</span>
+          </a>
+          <a href="https://www.megamillions.com/" class="lottery-box" target="_blank">
+            <img src="/pfp/mega-removebg-preview.png" alt="Mega Millions Logo">
+            <span class="balls">Mega Millions</span>
+          </a>
+          <a href="https://www.njlottery.com/" class="lottery-box" target="_blank">
+            <img src="/pfp/images-removebg-preview.png" alt="New Jersey Lottery Logo">
+            <span class="balls">Pick 3 </span>
+          </a>
+          <a href="https://www.njlottery.com/" class="lottery-box" target="_blank">
+            <img src="/pfp/pick 4.webp" alt="New Jersey Lottery Logo">
+            <span class="balls">Pick 4 </span>
+          </a>
+          <a href="https://www.njlottery.com/" class="lottery-box" target="_blank">
+            <img src="/pfp/cash.png" alt="New Jersey Lottery Logo">
+            <span class="balls"> Cash 5 </span>
+          </a>
+          <a href="https://www.njlottery.com/" class="lottery-box" target="_blank">
+            <img src="/pfp/cash4.png" alt="New Jersey Lottery Logo">
+            <span class="balls"> Cash 4 Life </span>
+          </a>
+          <a href="https://www.njlottery.com/" class="lottery-box" target="_blank">
+            <img src="/pfp/cashpop.png" alt="New Jersey Lottery Logo">
+            <span class="balls"> Cash Pop </span>
+          </a>
+          <a href="#" class="lottery-box" target="_blank">
+            <span>Cash4Life</span>
+          </a>
         </div>
+      </section>
+  </main>
 
-        <!-- Text-Based Navbar -->
-        <nav class="text-nav">
-            <a href="our-story.html" class="nav-item">Our Story</a>
-            <a href="bus-tickets.html" class="nav-item">Bus Tickets</a>
-            <a href="lottery.html" class="nav-item">Lottery</a>
-            <a href="work-supplies.html" class="nav-item">Work Supplies</a>
-            <a href="social-area.html" class="nav-item">Social Area</a>
-            <a href="snacks.html" class="nav-item">Snacks</a>
-            <a href="drinks.html" class="nav-item">Drinks</a>
-            <a href="nicotine-products.html" class="nav-item">Nicotine Products</a>
-            <a href="stamps.html" class="nav-item">Stamps</a>
-        </nav>
-    </header>
+  <footer>
+    <p>© 2025 Madison Variety. All rights reserved.</p>
+  </footer>
 
-    <main>
-        <div id="app">
-            <div class="lottery-results">
-                <div class="lottery-item" v-for="lottery in lotteries" :key="lottery.name">
-                    <h3>{{ lottery.name }}</h3>
-                    <p><strong>Numbers:</strong> {{ lottery.numbers }}</p>
-                    <p v-if="lottery.jackpot"><strong>Jackpot:</strong> {{ lottery.jackpot }}</p>
-                    <p><strong>Last Updated:</strong> {{ lottery.lastUpdated }}</p>
-                </div>
-            </div>
-
-            <div class="winner-announcement">
-                🎉 WE HAD A $15,000 LOTTERY WINNER AT OUR STORE! 🎉
-            </div>
-
-            <div class="lottery-list">
-                <h2>Lotteries We Offer</h2>
-                <ul>
-                    <li>Powerball</li>
-                    <li>Mega Millions</li>
-                    <li>New Jersey Lottery</li>
-                    <li>Pick-6</li>
-                    <li>Cash4Life</li>
-                </ul>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>© 2025 Madison Variety. All rights reserved.</p>
-    </footer>
-
-    <script src="/lottery/lottery.js"></script>
+  <script src="/lottery/lottery.js"></script>
 </body>
+
 </html>
