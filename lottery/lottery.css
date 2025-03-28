@@ -1,4 +1,10 @@
-/* Lottery Page Styles */
+
+@font-face {
+    font-family: 'Turnaround';
+    src: url('/Turnaround_Italic.ttf');
+}
+
+
 .lottery-section {
     max-width: 800px;
     margin: 40px auto;
@@ -29,33 +35,38 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.lottery-result h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8em;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
+
 
 .lottery-numbers {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
-
-.lottery-ball {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: #3498db;
-    color: #ffffff;
-    border-radius: 50%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    margin: 0 5px;
-    font-size: 1.2em;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
+.lottery-container {
+    margin-top: 20px;
+}
+.lottery-ball {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
 
 .special-ball {
     background: #e74c3c;
@@ -66,6 +77,7 @@
     font-size: 1.1em;
     color: #495057;
     margin: 10px 0;
+    
 }
 
 /* Lottery Offerings Styles */
@@ -777,8 +789,11 @@ footer {
   }
   
   .lottery-result h2 {
-    font-size: 18px;
+    font-size: 30px;
+    letter-spacing: 3px;
     margin-bottom: 5px;
+    font-family: turnaround;
+    color: red;
   }
   
   /* Winner Announcement */
@@ -857,4 +872,32 @@ footer {
       font-size: 14px;
     }
   }
-  
+  .winner-flipboard {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background: #FFD700;
+    color: #000;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .flipboard {
+    display: flex;
+    flex-direction: column;
+    animation: flip 20s infinite;
+  }
+  .flipboard-item {
+    height: 50px;
+  }
+  @keyframes flip {
+    0%, 20% { transform: translateY(0); }
+    25%, 45% { transform: translateY(-50px); }
+    50%, 70% { transform: translateY(-100px); }
+    75%, 95% { transform: translateY(-150px); }
+    100% { transform: translateY(0); }
+  }

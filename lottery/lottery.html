@@ -60,14 +60,31 @@
         <h1>Latest Lottery Results</h1>
         <div v-for="lottery in lotteries" :key="lottery.name" class="lottery-result">
           <h2>{{ lottery.name }}</h2>
-          <p>Numbers: {{ lottery.numbers }}</p>
+          <p class=>Numbers: {{ lottery.numbers }}</p>
           <p>Jackpot: {{ lottery.jackpot }}</p>
           <p>Last Updated: {{ lottery.lastUpdated }}</p>
         </div>
       </section>
+      
 
-      <div class="winner-announcement">
-        🎉 WE HAD A $15,000 LOTTERY WINNER AT OUR STORE! 🎉
+      <div class="winner-flipboard">
+        <div class="flipboard">
+          <div class="flipboard-item">
+            🎉 3/8/2024: $20,000 Crossword Winner! 🎉
+          </div>
+          <div class="flipboard-item">
+            🎉 11/23/2024: $7,500 Big Winner! 🎉
+          </div>
+          <div class="flipboard-item">
+            🎉 6/29/2024: $10,000 Big Winner! 🎉
+          </div>
+          <div class="flipboard-item">
+            🎉 JOHN SMITH WON $5,000 IN OUR LOTTERY! 🎉
+          </div>
+          <div class="flipboard-item">
+            🎉 MARY JOHNSON WON $20,000! 🎉
+          </div>
+        </div>
       </div>
 
       <section class="lottery-list">

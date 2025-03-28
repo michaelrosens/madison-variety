@@ -12,51 +12,57 @@ createApp({
     setInterval(this.fetchLotteryResults, 3600000);
   },
   methods: {
-    fetchLotteryResults() {
-      this.getPowerballResults();
-    },
-
-    getPowerballResults() {
-      var xhr = new XMLHttpRequest();
-      xhr.withCredentials = true;
-
-      xhr.onreadystatechange = () => {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-          try {
-            const response = JSON.parse(xhr.responseText);
-            console.log("Powerball API Response:", response);
-
-            if (!response || !response.result) {
-              throw new Error("Invalid API response structure");
-            }
-
-            const result = response.result;
-
-            this.lotteries = [{
-              name: "Powerball Checker",
-              numbers: result.numbers ? result.numbers.join(", ") + ` PB: ${result.powerball}` : "N/A",
-              jackpot: result.jackpot || "N/A",
-              message: result.message || "",
-              lastUpdated: new Date().toLocaleString()
-            }];
-          } catch (error) {
-            console.error("Error processing Powerball results:", error);
-            this.lotteries = [{
-              name: "Powerball Checker",
-              numbers: "Error fetching results",
-              jackpot: "N/A",
-              message: "",
-              lastUpdated: new Date().toLocaleString()
-            }];
+    async fetchLotteryResults() {
+      try {
+        const megaResponse = await fetch("https://api.apiverve.com/v1/lottery?numbers=megamillions", {
+          method: "GET",
+          headers: {
+            "x-api-key": "08e39234-3faf-4249-aad0-ec5cf0d66947"
           }
+        });
+        
+        const powerballResponse = await fetch("https://api.apiverve.com/v1/lottery?numbers=powerball", {
+          method: "GET",
+          headers: {
+            "x-api-key": "08e39234-3faf-4249-aad0-ec5cf0d66947"
+          }
+        });
+        
+        const megaData = await megaResponse.json();
+        const powerballData = await powerballResponse.json();
+        
+        console.log("Mega Millions API Response:", megaData);
+        console.log("Powerball API Response:", powerballData);
+        
+        if (megaData.status !== "ok" || !megaData.data || powerballData.status !== "ok" || !powerballData.data) {
+          throw new Error("Invalid API response structure");
         }
-      };
-
-      xhr.open("GET", "https://api.collectapi.com/chancegame/usaPowerballChecker?pb=12&numbers=12%2C33%2C54%2C57%2C60");
-      xhr.setRequestHeader("content-type", "application/json");
-      xhr.setRequestHeader("authorization", "apikey 7a8ZGtfZEoloiaGHteuTSK:1dSgmb4ifZg02TiXziRQqL");
-
-      xhr.send(null);
+        
+        this.lotteries = [
+          {
+            name: "Mega Millions",
+            numbers: megaData.data.numbers.join(", "),
+            jackpot: megaData.data.jackpot,
+            lastUpdated: new Date().toLocaleString()
+          },
+          {
+            name: "Powerball",
+            numbers: powerballData.data.numbers.join(", "),
+            jackpot: powerballData.data.jackpot,
+            lastUpdated: new Date().toLocaleString()
+          }
+        ];
+      } catch (error) {
+        console.error("Error fetching lottery results:", error);
+        this.lotteries = [{
+          name: "Lottery Results",
+          numbers: "Error fetching results",
+          jackpot: "N/A",
+          lastUpdated: new Date().toLocaleString()
+        }];
+      }
     }
   }
+
+  
 }).mount("#app");
