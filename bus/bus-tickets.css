@@ -1,0 +1,1026 @@
+
+@font-face {
+    font-family: 'Turnaround';
+    src: url('/Turnaround_Italic.ttf');
+}
+
+
+.lottery-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.lottery-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.balls{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.lottery-result {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.lottery-numbers {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.lottery-container {
+    margin-top: 20px;
+}
+.lottery-ball {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.special-ball {
+    background: #e74c3c;
+}
+
+.lottery-result p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color: #495057;
+    margin: 10px 0;
+    
+}
+
+/* Lottery Offerings Styles */
+.lottery-offerings {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.lottery-offerings h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.lottery-offerings ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lottery-offerings li {
+    flex-basis: calc(33.333% - 10px);
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color: #495057;
+}
+
+/* Winner Announcement Styles */
+.winner-announcement {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f39c12;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.winner-announcement h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.winner-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.winner-announcement p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+body {
+    font-family: "Bodoni Moda", serif;
+    padding: 0;
+    font-weight: bolder;
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0);
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'Bodoni Poster';
+    src: url('Bodoni Poster/Bodoni Poster.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    height: 70px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.hours-info {
+    text-align: center;
+    padding: 0 10px;
+    border-left: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.hours-info:hover {
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.hours-info p {
+    margin: 4px 0;
+    font-size: 0.95em;
+    color: #495057;
+    font-family: "Bodoni Moda", serif;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.hours-info strong {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.contact-info {
+    text-align: right;
+    padding-left: 20px;
+}
+
+.contact-info p {
+    margin: 4px 0;
+    font-size: 0.95em;
+    color: #495057;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.contact-info p:hover {
+    color: #2c3e50;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.contact-info a:hover {
+    color: #2980b9;
+}
+
+.contact-info a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.contact-info a:hover::after {
+    width: 100%;
+}
+
+.date {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.95em;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+.text-nav {
+    display: flex;
+    background: #2c3e50;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover {
+    color: #fff;
+}
+
+.nav-item:hover::after {
+    width: 80%;
+}
+
+/* Location Section */
+.location-section {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0); /* Match body gradient */
+    text-align: center;
+}
+
+.location-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.location-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.map-container iframe {
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-container iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.hero {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 60px 30px;
+    position: relative;
+    margin: 0 0 40px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    position: relative;
+}
+
+.learn-more {
+    background: #2c3e50; /* Match site color */
+    border: none;
+    padding: 12px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.learn-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.learn-more:hover {
+    background: #1a252f; /* Slightly darker shade */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.learn-more:hover::before {
+    left: 100%;
+}
+
+.store-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.store-image:hover {
+    transform: scale(1.02);
+}
+
+/* Reviews Section */
+.reviews-section {
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0); /* Match body gradient */
+    padding: 40px 20px;
+    margin: 0 0 40px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.reviews-header p {
+    color: #495057;
+    font-size: 1.1em;
+}
+
+.reviews-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.reviews-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+.review-card {
+    min-width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    background: linear-gradient(135deg, #ffffff, #fff5f7); /* Subtle pink tint */
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviewer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    /* Removed the border */
+}
+
+.reviewer-info {
+    flex: 1;
+}
+
+.reviewer-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.review-count {
+    font-size: 0.85em;
+    color: #666;
+    font-style: italic;
+    display: block;
+    margin-top: 2px;
+}
+
+.review-date {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    margin-top: 2px;
+}
+
+.review-rating {
+    color: #ff6f61; /* Pink accent to match logo */
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.review-content {
+    font-family: 'Poppins', sans-serif;
+    color: #495057;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.reviewer-image-initials {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.jones-initials {
+    background-color: #ff6200; /* Orange for Jones Rasmussen, matching Kary Deluga */
+}
+
+.thomas-initials {
+    background-color: #8b4513; /* Brown for Thomas Maindelle (saddlebrown) */
+}
+
+.kary-initials {
+    background-color: #ff6200; /* Orange for Kary Deluga, already added previously */
+}
+
+.adam-initials {
+    background-color: #90ee90; /* Light green for Adam Valvo */
+}
+
+.lk-initials {
+    background-color: #006400; /* Dark green for LK */
+}
+
+
+
+.review-category {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #2c3e50; /* Match site color */
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin-top: 15px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #2c3e50; /* Match site color */
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    color: #fff;
+}
+
+.carousel-controls:hover {
+    background: #1a252f; /* Slightly darker shade */
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-controls.prev {
+    left: 0;
+}
+
+.carousel-controls.next {
+    right: 0;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #dee2e6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #2c3e50; /* Match site color */
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2c3e50;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+.lottery-results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.lottery-item {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 15px;
+}
+
+.lottery-item:last-child {
+    border-bottom: none;
+}
+
+.lottery-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.lottery-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.winner-announcement {
+    background-color: #ffdb58;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.lottery-list {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.lottery-list h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.lottery-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lottery-list li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color: #495057;
+    line-height: 1.8;
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.lottery-list li:last-child {
+    border-bottom: none;
+}
+
+#app {
+    max-width: 900px;
+    margin: 20px auto;
+}/* General Lottery Styles */
+#app {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .lottery-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .lottery-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .lottery-result {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .lottery-result h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-family: turnaround;
+    color: red;
+  }
+  
+  /* Winner Announcement */
+  .winner-announcement {
+    background-color: #ffdb58;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Lottery List */
+  .lottery-list {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lottery-list h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Lottery Grid */
+  .lottery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .lottery-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 1px solid #ddd;
+  }
+  
+  .lottery-box img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .lottery-box span {
+    font-size: 16px;
+  }
+  
+  .lottery-box:hover {
+    background-color: #e9e9e9;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .lottery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    .lottery-box img {
+      max-width: 60px;
+      max-height: 60px;
+    }
+  
+    .lottery-box span {
+      font-size: 14px;
+    }
+  }
+/* Bus Tickets Page Styles */
+.bus-tickets-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px; /* Increased padding for more space */
+    background: #fff;
+    border-radius: 12px; /* Slightly increased border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow intensity */
+}
+
+.bus-tickets-header {
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin */
+}
+
+.bus-tickets-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em; /* Slightly larger font size */
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.bus-tickets-header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #495057;
+    line-height: 1.7; /* Increased line height for better readability */
+    margin-bottom: 25px; /* More space below paragraph */
+}
+
+.bus-ticket-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px; /* Increased margin */
+    padding: 30px; /* Added padding */
+    border-radius: 12px; /* Rounded corners */
+    background: #f8f9fa; /* Lighter background */
+}
+
+.bus-ticket-info img {
+    max-width: 450px; /* Slightly larger image */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 30px; /* Increased margin */
+}
+
+.bus-ticket-info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em; /* Slightly larger font size */
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.bus-ticket-info ul {
+    list-style: disc;
+    padding-left: 30px; /* Increased padding */
+}
+
+.bus-ticket-info li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #495057;
+    line-height: 1.8; /* Increased line height */
+    margin-bottom: 8px; /* More space between list items */
+}
+
+.bus-companies {
+    text-align: center;
+    margin-bottom: 50px; /* Increased margin */
+}
+
+.bus-companies h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em; /* Slightly larger font size */
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.company-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.company-item {
+    margin: 20px; /* Increased margin */
+}
+
+.company-item a {
+    text-decoration: none;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.company-item a:hover {
+    transform: translateY(-5px);
+}
+
+.company-item img {
+    max-width: 180px; /* Slightly larger logo size */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-item span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em; /* Slightly larger font size */
+}
+
+.convenience {
+    text-align: center;
+    margin-bottom: 50px; /* Increased margin */
+    padding: 30px; /* Added padding */
+    border-radius: 12px; /* Rounded corners */
+    background: #f8f9fa; /* Lighter background */
+}
+
+.convenience h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em; /* Slightly larger font size */
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.convenience p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #495057;
+    line-height: 1.8; /* Increased line height */
+}
+
+.bus-map {
+    text-align: center;
+}
+
+.bus-map h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em; /* Slightly larger font size */
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.route-map {
+    max-width: 90%; /* Slightly larger map */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
