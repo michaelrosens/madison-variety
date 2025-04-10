@@ -1,10 +1,3 @@
-
-@font-face {
-    font-family: 'Turnaround';
-    src: url('../Turnaround_Italic.ttf');
-}
-
-
 .lottery-section {
     max-width: 800px;
     margin: 40px auto;
@@ -22,7 +15,7 @@
     margin-bottom: 30px;
 }
 
-.balls{
+.balls {
     font-family: 'Poppins', sans-serif;
 
 }
@@ -42,15 +35,18 @@
     justify-content: center;
     margin: 20px 0;
 }
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
 }
+
 .lottery-container {
     margin-top: 20px;
 }
+
 .lottery-ball {
     display: inline-block;
     width: 50px;
@@ -77,7 +73,7 @@ body {
     font-size: 1.1em;
     color: #495057;
     margin: 10px 0;
-    
+
 }
 
 /* Lottery Offerings Styles */
@@ -144,6 +140,7 @@ body {
     font-size: 1.2em;
     color: #ffffff;
 }
+
 body {
     font-family: "Bodoni Moda", serif;
     padding: 0;
@@ -320,7 +317,8 @@ body {
 /* Location Section */
 .location-section {
     padding: 40px 20px;
-    background: linear-gradient(135deg, #f8f9fa, #ffe6f0); /* Match body gradient */
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0);
+    /* Match body gradient */
     text-align: center;
 }
 
@@ -388,7 +386,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
     pointer-events: none;
 }
 
@@ -409,7 +407,8 @@ body {
 }
 
 .learn-more {
-    background: #2c3e50; /* Match site color */
+    background: #2c3e50;
+    /* Match site color */
     border: none;
     padding: 12px 30px;
     font-family: 'Poppins', sans-serif;
@@ -430,14 +429,15 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: 0.5s;
 }
 
 .learn-more:hover {
-    background: #1a252f; /* Slightly darker shade */
+    background: #1a252f;
+    /* Slightly darker shade */
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .learn-more:hover::before {
@@ -459,7 +459,8 @@ body {
 
 /* Reviews Section */
 .reviews-section {
-    background: linear-gradient(135deg, #f8f9fa, #ffe6f0); /* Match body gradient */
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0);
+    /* Match body gradient */
     padding: 40px 20px;
     margin: 0 0 40px 0;
     border-radius: 12px;
@@ -505,7 +506,8 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     border: 1px solid #e9ecef;
-    background: linear-gradient(135deg, #ffffff, #fff5f7); /* Subtle pink tint */
+    background: linear-gradient(135deg, #ffffff, #fff5f7);
+    /* Subtle pink tint */
 }
 
 .review-card:hover {
@@ -555,7 +557,8 @@ body {
 }
 
 .review-rating {
-    color: #ff6f61; /* Pink accent to match logo */
+    color: #ff6f61;
+    /* Pink accent to match logo */
     font-size: 1.2em;
     margin: 10px 0;
 }
@@ -584,23 +587,28 @@ body {
 }
 
 .jones-initials {
-    background-color: #ff6200; /* Orange for Jones Rasmussen, matching Kary Deluga */
+    background-color: #ff6200;
+    /* Orange for Jones Rasmussen, matching Kary Deluga */
 }
 
 .thomas-initials {
-    background-color: #8b4513; /* Brown for Thomas Maindelle (saddlebrown) */
+    background-color: #8b4513;
+    /* Brown for Thomas Maindelle (saddlebrown) */
 }
 
 .kary-initials {
-    background-color: #ff6200; /* Orange for Kary Deluga, already added previously */
+    background-color: #ff6200;
+    /* Orange for Kary Deluga, already added previously */
 }
 
 .adam-initials {
-    background-color: #90ee90; /* Light green for Adam Valvo */
+    background-color: #90ee90;
+    /* Light green for Adam Valvo */
 }
 
 .lk-initials {
-    background-color: #006400; /* Dark green for LK */
+    background-color: #006400;
+    /* Dark green for LK */
 }
 
 
@@ -608,7 +616,8 @@ body {
 .review-category {
     display: inline-block;
     padding: 4px 12px;
-    background: #2c3e50; /* Match site color */
+    background: #2c3e50;
+    /* Match site color */
     color: #fff;
     border-radius: 20px;
     font-size: 0.85em;
@@ -621,7 +630,8 @@ body {
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background: #2c3e50; /* Match site color */
+    background: #2c3e50;
+    /* Match site color */
     border: none;
     border-radius: 50%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -635,7 +645,8 @@ body {
 }
 
 .carousel-controls:hover {
-    background: #1a252f; /* Slightly darker shade */
+    background: #1a252f;
+    /* Slightly darker shade */
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -664,7 +675,8 @@ body {
 }
 
 .dot.active {
-    background: #2c3e50; /* Match site color */
+    background: #2c3e50;
+    /* Match site color */
     transform: scale(1.2);
 }
 
@@ -760,44 +772,48 @@ footer {
 #app {
     max-width: 900px;
     margin: 20px auto;
-}/* General Lottery Styles */
+}
+
+/* General Lottery Styles */
 #app {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-  }
-  
-  .lottery-section {
+}
+
+.lottery-section {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-  }
-  
-  .lottery-section h1 {
+}
+
+.lottery-section h1 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
-  }
-  
-  .lottery-result {
+}
+
+.lottery-result {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-  }
-  
-  .lottery-result h2 {
-    font-size: 30px;
+}
+
+.lottery-result h2 {
+    font-size: 40px;
     letter-spacing: 3px;
     margin-bottom: 5px;
-    font-family: turnaround;
+    font-family: "ccbiffbamboom", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: red;
-  }
-  
-  /* Winner Announcement */
-  .winner-announcement {
+}
+
+/* Winner Announcement */
+.winner-announcement {
     background-color: #ffdb58;
     color: #333;
     text-align: center;
@@ -805,29 +821,29 @@ footer {
     border-radius: 8px;
     margin-bottom: 20px;
     font-weight: bold;
-  }
-  
-  /* Lottery List */
-  .lottery-list {
+}
+
+/* Lottery List */
+.lottery-list {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .lottery-list h2 {
+}
+
+.lottery-list h2 {
     font-size: 20px;
     margin-bottom: 20px;
-  }
-  
-  /* Lottery Grid */
-  .lottery-grid {
+}
+
+/* Lottery Grid */
+.lottery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-  }
-  
-  .lottery-box {
+}
+
+.lottery-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -840,39 +856,40 @@ footer {
     text-align: center;
     transition: background-color 0.3s, transform 0.3s;
     border: 1px solid #ddd;
-  }
-  
-  .lottery-box img {
+}
+
+.lottery-box img {
     max-width: 80px;
     max-height: 80px;
     margin-bottom: 10px;
-  }
-  
-  .lottery-box span {
+}
+
+.lottery-box span {
     font-size: 16px;
-  }
-  
-  .lottery-box:hover {
+}
+
+.lottery-box:hover {
     background-color: #e9e9e9;
     transform: translateY(-3px);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .lottery-grid {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
-  
+
     .lottery-box img {
-      max-width: 60px;
-      max-height: 60px;
+        max-width: 60px;
+        max-height: 60px;
     }
-  
+
     .lottery-box span {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
-  .winner-flipboard {
+}
+
+.winner-flipboard {
     position: relative;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
@@ -885,19 +902,41 @@ footer {
     line-height: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  .flipboard {
+}
+
+.flipboard {
     display: flex;
     flex-direction: column;
     animation: flip 20s infinite;
-  }
-  .flipboard-item {
+}
+
+.flipboard-item {
     height: 50px;
-  }
-  @keyframes flip {
-    0%, 20% { transform: translateY(0); }
-    25%, 45% { transform: translateY(-50px); }
-    50%, 70% { transform: translateY(-100px); }
-    75%, 95% { transform: translateY(-150px); }
-    100% { transform: translateY(0); }
-  }
+}
+
+@keyframes flip {
+
+    0%,
+    20% {
+        transform: translateY(0);
+    }
+
+    25%,
+    45% {
+        transform: translateY(-50px);
+    }
+
+    50%,
+    70% {
+        transform: translateY(-100px);
+    }
+
+    75%,
+    95% {
+        transform: translateY(-150px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

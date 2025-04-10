@@ -17,14 +17,14 @@ createApp({
         const megaResponse = await fetch("https://api.apiverve.com/v1/lottery?numbers=megamillions", {
           method: "GET",
           headers: {
-            "x-api-key": "08e39234-3faf-4249-aad0-ec5cf0d66947"
+            "x-api-key": "1dd9c666-841e-484c-9f9f-1c9e42bed31b"
           }
         });
         
         const powerballResponse = await fetch("https://api.apiverve.com/v1/lottery?numbers=powerball", {
           method: "GET",
           headers: {
-            "x-api-key": "08e39234-3faf-4249-aad0-ec5cf0d66947"
+            "x-api-key": "1dd9c666-841e-484c-9f9f-1c9e42bed31b"
           }
         });
         
