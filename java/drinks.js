@@ -26,6 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
   // Update clock every second
   setInterval(updateClock, 1000);
   
+  // Hide option section for drinks with only one type
+  const singleTypeDrinks = document.querySelectorAll('.drink-card[data-single-type="true"]');
+  singleTypeDrinks.forEach(card => {
+    const optionsSection = card.querySelector('.drink-options');
+    if (optionsSection) {
+      optionsSection.style.display = 'none';
+    }
+  });
+  
   // Get all option boxes
   const optionBoxes = document.querySelectorAll('.option-box');
   
@@ -59,5 +68,16 @@ document.addEventListener('DOMContentLoaded', function() {
               img.style.transform = 'scale(1)';
           }, 200);
       });
+  });
+
+  // Alternative approach: Hide option sections with only one option
+  document.querySelectorAll('.drink-card').forEach(card => {
+    const options = card.querySelectorAll('.option-box');
+    if (options.length === 1) {
+      const optionsSection = card.querySelector('.drink-options');
+      if (optionsSection) {
+        optionsSection.style.display = 'none';
+      }
+    }
   });
 });

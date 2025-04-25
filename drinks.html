@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Madison Variety - Drinks Selection</title>
     <link rel="stylesheet" href="css\drink.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://use.typekit.net/ppe5fpz.css">
+      <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -61,99 +69,164 @@
                     <span class="drink-price">$1.00</span>
                 </div>
                 <div class="drink-image-container">
-                    <img src="/api/placeholder/180/240" alt="Coca Cola" class="drink-image" id="coke-image">
+                    <img src="pfp\coca.png" alt="Coca Cola" class="drink-image" id="coke-image">
                 </div>
                 <div class="drink-options">
-                    <div class="option-box active" data-tooltip="Classic" data-image="/api/placeholder/180/240" data-name="Coca Cola Classic" data-price="$1.00">
-                        <img src="/api/placeholder/60/60" alt="Classic" class="option-image">
+                    <div class="option-box active" data-tooltip="Classic" data-image="pfp\coca.png" data-name="Coca Cola Classic" data-price="$1.00">
+                        <img src="pfp\coca.png" alt="Classic" class="option-image">
                     </div>
-                    <div class="option-box" data-tooltip="Diet" data-image="/api/placeholder/180/240" data-name="Diet Coke" data-price="$1.00">
-                        <img src="/api/placeholder/60/60" alt="Diet" class="option-image">
+                    <div class="option-box" data-tooltip="Coke Can" data-image="pfp\coke-can.webp" data-name="Coke Can" data-price="¢0.75">
+                        <img src="pfp\coke-can.webp" class="option-image">
                     </div>
-                    <div class="option-box" data-tooltip="Zero Sugar" data-image="/api/placeholder/180/240" data-name="Coke Zero" data-price="$1.25">
-                        <img src="/api/placeholder/60/60" alt="Zero Sugar" class="option-image">
-                    </div>
-                    <div class="option-box" data-tooltip="2L Bottle" data-image="/api/placeholder/180/240" data-name="Coca Cola 2L" data-price="$2.50">
-                        <img src="/api/placeholder/60/60" alt="2L Bottle" class="option-image">
-                    </div>
+                    <div class="option-box" data-tooltip="2L Bottle" data-image="pfp/coke-2L.png" data-name="Coca Cola 2L" data-price="$2.50">
+                      <img src="pfp/coke-2L.png" alt="2L Bottle" class="option-image">
+                  </div>
+                   
                 </div>
             </div>
+            <!-- Diet Coke -->
 
-            <!-- Pepsi -->
+            <div class="drink-card">
+              <div class="drink-info">
+                  <h2 class="drink-name">Diet Coke</h2>
+                  <span class="drink-price">$1.00</span>
+              </div>
+              <div class="drink-image-container">
+                  <img src="pfp\diet-coke.png" alt="Coca Cola" class="drink-image" id="coke-image">
+              </div>
+              <div class="drink-options">
+                  <div class="option-box active" data-tooltip="Classic" data-image="pfp\diet-coke.png" data-name="Coca Cola Classic" data-price="$1.00">
+                      <img src="pfp\diet-coke.png" alt="Classic" class="option-image">
+                  </div>
+                  <div class="option-box" data-tooltip="Diet" data-image="pfp\diet-coke-can.png" data-name="Diet Coke Can" data-price="¢0.75">
+                      <img src="pfp\diet-coke-can.png" alt="Diet" class="option-image">
+                  </div>
+                  
+                  <div class="option-box" data-tooltip="2L Bottle" data-image="pfp\diet-coke-2L.png" data-name="Diet Coca Cola 2L" data-price="$2.50">
+                      <img src="pfp\diet-coke-2L.png" alt="2L Bottle" class="option-image">
+                  </div>
+              </div>
+          </div>
+            <!-- Coke Zero -->
+
+          <div class="drink-card">
+            <div class="drink-info">
+                <h2 class="drink-name">Coke Zero</h2>
+                <span class="drink-price">$1.00</span>
+            </div>
+            <div class="drink-image-container">
+                <img src="pfp\coke-zero.png" alt="Coca Cola" class="drink-image" id="coke-image">
+            </div>
+            <div class="drink-options">
+                <div class="option-box active" data-tooltip="Classic" data-image="pfp\coke-zero.png" data-name="Coca Cola Classic" data-price="$1.00">
+                    <img src="pfp\coke-zero.png" alt="Classic" class="option-image">
+                </div>
+                <div class="option-box" data-tooltip="Can" data-image="pfp\coke-zero-can.png" data-name="Coke Zero Can" data-price="¢0.75">
+                    <img src="pfp\coke-zero-can.png" alt="Diet" class="option-image">
+                </div>
+               
+            </div>
+        </div>
+
+
+
+
+            <!-- Dr.Pepper -->
             <div class="drink-card">
                 <div class="drink-info">
-                    <h2 class="drink-name">Pepsi Original</h2>
+                    <h2 class="drink-name">Dr. Pepper</h2>
                     <span class="drink-price">$1.00</span>
                 </div>
                 <div class="drink-image-container">
-                    <img src="/api/placeholder/180/240" alt="Pepsi" class="drink-image" id="pepsi-image">
+                    <img src="pfp\dr.pepper.png" alt="Pepsi" class="drink-image" id="pepsi-image">
                 </div>
                 <div class="drink-options">
-                    <div class="option-box active" data-tooltip="Original" data-image="/api/placeholder/180/240" data-name="Pepsi Original" data-price="$1.00">
-                        <img src="/api/placeholder/60/60" alt="Original" class="option-image">
+                    <div class="option-box active" data-tooltip="Original" data-image="pfp\dr.pepper.png" data-name="Dr.Pepper" data-price="$1.00">
+                        <img src="pfp\dr.pepper.png" alt="Original" class="option-image">
                     </div>
-                    <div class="option-box" data-tooltip="Diet" data-image="/api/placeholder/180/240" data-name="Diet Pepsi" data-price="$1.00">
-                        <img src="/api/placeholder/60/60" alt="Diet" class="option-image">
+                    <div class="option-box" data-tooltip="Diet" data-image="pfp\diet dr.pepper.png" data-name="Dr.Pepper Can" data-price="¢0.75">
+                        <img src="pfp\diet dr.pepper.png" alt="Diet" class="option-image">
                     </div>
-                    <div class="option-box" data-tooltip="Zero Sugar" data-image="/api/placeholder/180/240" data-name="Pepsi Zero Sugar" data-price="$1.25">
-                        <img src="/api/placeholder/60/60" alt="Zero Sugar" class="option-image">
-                    </div>
-                    <div class="option-box" data-tooltip="Cherry" data-image="/api/placeholder/180/240" data-name="Wild Cherry Pepsi" data-price="$1.25">
-                        <img src="/api/placeholder/60/60" alt="Wild Cherry" class="option-image">
-                    </div>
+                   
+                   
                 </div>
             </div>
 
             <!-- Mountain Dew -->
             <div class="drink-card">
-                <div class="drink-info">
-                    <h2 class="drink-name">Mountain Dew Original</h2>
-                    <span class="drink-price">$1.00</span>
-                </div>
-                <div class="drink-image-container">
-                    <img src="/api/placeholder/180/240" alt="Mountain Dew" class="drink-image" id="dew-image">
-                </div>
-                <div class="drink-options">
-                    <div class="option-box active" data-tooltip="Original" data-image="/api/placeholder/180/240" data-name="Mountain Dew Original" data-price="$1.00">
-                        <img src="/api/placeholder/60/60" alt="Original" class="option-image">
-                    </div>
-                    <div class="option-box" data-tooltip="Code Red" data-image="/api/placeholder/180/240" data-name="Mountain Dew Code Red" data-price="$1.25">
-                        <img src="/api/placeholder/60/60" alt="Code Red" class="option-image">
-                    </div>
-                    <div class="option-box" data-tooltip="Voltage" data-image="/api/placeholder/180/240" data-name="Mountain Dew Voltage" data-price="$1.25">
-                        <img src="/api/placeholder/60/60" alt="Voltage" class="option-image">
-                    </div>
-                    <div class="option-box" data-tooltip="Major Melon" data-image="/api/placeholder/180/240" data-name="Mountain Dew Major Melon" data-price="$1.50">
-                        <img src="/api/placeholder/60/60" alt="Major Melon" class="option-image">
-                    </div>
-                </div>
-            </div>
+              <div class="drink-info">
+                  <h2 class="drink-name">Monster Energy</h2>
+                  <span class="drink-price">$1.29</span>
+              </div>
+              <div class="drink-image-container">
+                  <img src="pfp\monster.png" alt="Arizona Iced Tea" class="drink-image">
+              </div>
+              <!-- This will be automatically hidden since there's only one option -->
+              <div class="drink-options">
+                  <div class="option-box active" data-image="/api/placeholder/180/240" data-name="Arizona Iced Tea" data-price="$1.29">
+                      <img src="/api/placeholder/60/60" alt="Original" class="option-image">
+                  </div>
+              </div>
+              </div>
+  
 
             <!-- Dr Pepper -->
             <div class="drink-card">
                 <div class="drink-info">
-                    <h2 class="drink-name">Dr Pepper Original</h2>
+                    <h2 class="drink-name">Sprite</h2>
                     <span class="drink-price">$1.00</span>
                 </div>
                 <div class="drink-image-container">
-                    <img src="/api/placeholder/180/240" alt="Dr Pepper" class="drink-image" id="drpepper-image">
+                    <img src="pfp\sprite.png" alt="Dr Pepper" class="drink-image" id="drpepper-image">
                 </div>
                 <div class="drink-options">
-                    <div class="option-box active" data-tooltip="Original" data-image="/api/placeholder/180/240" data-name="Dr Pepper Original" data-price="$1.00">
-                        <img src="/api/placeholder/60/60" alt="Original" class="option-image">
+                    <div class="option-box active" data-tooltip="Original" data-image="pfp\sprite.png" data-name="Sprite" data-price="$1.00">
+                        <img src="pfp\sprite.png" alt="Original" class="option-image">
                     </div>
-                    <div class="option-box" data-tooltip="Diet" data-image="/api/placeholder/180/240" data-name="Diet Dr Pepper" data-price="$1.00">
-                        <img src="/api/placeholder/60/60" alt="Diet" class="option-image">
-                    </div>
-                    <div class="option-box" data-tooltip="Cherry" data-image="/api/placeholder/180/240" data-name="Cherry Dr Pepper" data-price="$1.25">
-                        <img src="/api/placeholder/60/60" alt="Cherry" class="option-image">
-                    </div>
-                    <div class="option-box" data-tooltip="Zero Sugar" data-image="/api/placeholder/180/240" data-name="Dr Pepper Zero Sugar" data-price="$1.25">
-                        <img src="/api/placeholder/60/60" alt="Zero Sugar" class="option-image">
-                    </div>
+                    <div class="option-box" data-tooltip="Diet" data-image="pfp\sprite 2L.webp" data-name="Sprite 2L" data-price="$2.50">
+                        <img src="pfp/sprite 2L.webp" alt="Diet" class="option-image">
+                 
                 </div>
             </div>
+            </div>
 
+            <div class="drink-card">
+              <div class="drink-info">
+                  <h2 class="drink-name">Arizona Iced Tea</h2>
+                  <span class="drink-price">¢0.99</span>
+              </div>
+              <div class="drink-image-container">
+                  <img src="pfp\arizona.png" alt="Sprite" class="drink-image" id="sprite-image">
+              </div>
+              <div class="drink-options">
+                  <div class="option-box active" data-tooltip="Regular" data-image="pfp\arizona.png" data-name="Arizona Iced Tea" data-price="$1.00">
+                      <img src="pfp\arizona.png" alt="Regular" class="option-image">
+                  </div>
+                  <div class="option-box" data-tooltip="Zero Sugar" data-image="pfp\arizona-raspberry.png" data-name="Arizona Raspberry Iced Tea" data-price="$1.00">
+                      <img src="pfp\arizona-raspberry.png" alt="Zero Sugar" class="option-image">
+                  </div>
+                  <div class="option-box" data-tooltip="Cranberry" data-image="/api/placeholder/180/240" data-name="Sprite Cranberry" data-price="$1.25">
+                      <img src="/api/placeholder/60/60" alt="Cranberry" class="option-image">
+                  </div>
+             
+              </div>
+          </div>
+
+            <div class="drink-card">
+              <div class="drink-info">
+                  <h2 class="drink-name">Arizona Iced Tea</h2>
+                  <span class="drink-price">$1.29</span>
+              </div>
+              <div class="drink-image-container">
+                  <img src="/api/placeholder/180/240" alt="Arizona Iced Tea" class="drink-image">
+              </div>
+              <!-- This will be automatically hidden since there's only one option -->
+              <div class="drink-options">
+                  <div class="option-box active" data-image="/api/placeholder/180/240" data-name="Arizona Iced Tea" data-price="$1.29">
+                      <img src="/api/placeholder/60/60" alt="Original" class="option-image">
+                  </div>
+              </div>
+          </div>
             <!-- Sprite -->
             <div class="drink-card">
                 <div class="drink-info">
@@ -201,6 +274,9 @@
                     <div class="option-box" data-tooltip="Pineapple" data-image="/api/placeholder/180/240" data-name="Fanta Pineapple" data-price="$1.25">
                         <img src="/api/placeholder/60/60" alt="Pineapple" class="option-image">
                     </div>
+
+
+                    
                 </div>
             </div>
         </div>
