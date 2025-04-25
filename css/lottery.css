@@ -37,7 +37,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
@@ -142,7 +142,7 @@ body {
 }
 
 body {
-    font-family: "Bodoni Moda", serif;
+    font-family: "Poppins", sans-serif;
     padding: 0;
     background: linear-gradient(135deg, #f8f9fa, #ffe6f0);
     color: #2c3e50;
