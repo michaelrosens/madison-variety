@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Madison Variety - Drinks Selection</title>
+    <link rel="stylesheet" href="css\snack.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://use.typekit.net/ppe5fpz.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-top">
+            <a href="/index.html">
+                <img src="pfp/newmadison.png" alt="Madison Variety Logo" class="logo">
+            </a>
+
+            <div class="hours-info">
+                <p><strong>Store Hours:</strong></p>
+                <p>Monday - Friday : 5:00 AM <strong>-</strong> 7:00 PM</p>
+                <p>Saturday : 5:00 AM <strong>-</strong> 5:00 PM</p>
+                <p>Sunday : 5:00 AM <strong> - </strong> 5:00 PM</p>
+            </div>
+
+            <div class="contact-info">
+                <p>For more inquiries, call us: <a href="">+1 (732) 679-4181 </a></p>
+                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dolfinsnfl@aol.com&su=SUBJECT"
+                        target="_blank"><b>dolfinsnfl@aol.com</b></a></p>
+                <p><a href="https://maps.app.goo.gl/bi1NVKSQa5q5UBb26" target="_blank"><b>3062 US-9, Old Bridge, NJ
+                            08857</b></a></p>
+            </div>
+        </div>
+
+        <div class="date">
+            <p id="clock">March 25, 2025 | 11:52:31</p>
+        </div>
+
+        <!-- Text-Based Navbar -->
+        <nav class="text-nav">
+            <a href="ourstory.html" class="nav-item">Our Story</a>
+            <a href="bus-tickets.html" class="nav-item">Bus Tickets</a>
+            <a href="lottery.html" class="nav-item">Lottery</a>
+            <a href="check.html" class="nav-item">Check Cashing</a>
+            <a href="social-area.html" class="nav-item">Social Area</a>
+            <a href="snacks.html" class="nav-item">Snacks</a>
+            <a href="drinks.html" class="nav-item">Drinks</a>
+            <a href="nicotine.html" class="nav-item">Nicotine Products</a>
+            <a href="stamps.html" class="nav-item">Stamps</a>
+        </nav>
+    </header>
+
+    <h1 class="page-title">SNACKS SELECTION</h1>
+    <p class="description">Choose from our wide variety of delicious snacks. Use the search or filter to find your
+        favorites quickly.</p>
+
+    <div class="snacks-container">
+        <!-- Search and Sort -->
+        <div class="search-sort-container">
+            <input type="text" id="snack-search" placeholder="Search snacks...">
+            <select id="sort-options">
+                <option value="name-asc">Name A-Z</option>
+                <option value="name-desc">Name Z-A</option>
+                <option value="price-asc">Price Low-High</option>
+                <option value="price-desc">Price High-Low</option>
+            </select>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <button class="category-btn active" data-category="all">All Categories</button>
+            <button class="category-btn" data-category="chocolate">Chocolate</button>
+            <button class="category-btn" data-category="chips">Chips</button>
+
+            <button class="category-btn" data-category="cookies">Cookies/Bars</button>
+            <button class="category-btn" data-category="gum">Gum</button>
+        </div>
+
+        <!-- Snacks Grid -->
+        <div class="snacks-grid">
+            <!-- Snack Item 1 -->
+            <div class="snack-item" data-name="Snickers" data-price="1.25" data-category="chocolate">
+                <img src="snacks\snickers.avif" alt="Snickers" class="snack-image">
+                <h3 class="snack-name">Snickers</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="snickers">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 2 -->
+            <div class="snack-item" data-name="Lays Classic" data-price="1.50" data-category="chips">
+                <img src="snacks\lays.jpg" alt="Lays Classic" class="snack-image">
+                <h3 class="snack-name">Lays Potato Chips</h3>
+                <p class="snack-price">$1.50</p>
+                <button class="quick-view-btn" data-id="lays-classic">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 3 -->
+            <div class="snack-item" data-name="Chuckles" data-price="1.00" data-category="gummy">
+                <img src="snacks\chuckles.webp" alt="Chuckles" class="snack-image">
+                <h3 class="snack-name">Chuckles</h3>
+                <p class="snack-price">$1.00</p>
+                <button class="quick-view-btn" data-id="chuckles">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 4 -->
+            <div class="snack-item" data-name="Starburst" data-price="1.25" data-category="chewy">
+                <img src="snacks\starburst.webp" alt="Starburst" class="snack-image">
+                <h3 class="snack-name">Starburst</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="starburst">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 5 -->
+            <div class="snack-item" data-name="Milky Ways" data-price="1.25" data-category="chocolate">
+                <img src="snacks\milky.jpg" alt="Milky Ways" class="snack-image">
+                <h3 class="snack-name">Milky Ways</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="milky-ways">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 6 -->
+            <div class="snack-item" data-name="Crunch Bars" data-price="1.25" data-category="chocolate">
+                <img src="snacks\crunch.jpg" alt="Crunch Bars" class="snack-image">
+                <h3 class="snack-name">Crunch Bars</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="crunch-bars">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 7 -->
+            <div class="snack-item" data-name="Dots" data-price="1.00" data-category="gummy">
+                <img src="snacks\dots.webp" alt="Dots" class="snack-image">
+                <h3 class="snack-name">Dots</h3>
+                <p class="snack-price">$1.00</p>
+                <button class="quick-view-btn" data-id="dots">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 8 -->
+            <div class="snack-item" data-name="Hershey" data-price="1.25" data-category="chocolate">
+                <img src="snacks\hershey.webp" alt="Hershey" class="snack-image">
+                <h3 class="snack-name">Hershey</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="hershey">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 9 -->
+            <div class="snack-item" data-name="Kit Kats" data-price="1.25" data-category="chocolate">
+                <img src="snacks\kit.jpg" alt="Kit Kats" class="snack-image">
+                <h3 class="snack-name">Kit Kat</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="kit-kats">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 10 -->
+            <div class="snack-item" data-name="Twix Bar" data-price="1.25" data-category="chocolate">
+                <img src="snacks\twix.webp" alt="Twix Bar" class="snack-image">
+                <h3 class="snack-name">Twix Bar</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="twix-bar">Nutrition Facts</button>
+
+            </div>
+            <!-- Snack Item 24 -->
+            <div class="snack-item" data-name="Cheese Crackers" data-price="1.00" data-category="chips">
+                <img src="snacks\cheese.webp" alt="Cheese Crackers" class="snack-image">
+                <h3 class="snack-name">Cheese Crackers</h3>
+                <p class="snack-price">$1.00</p>
+                <button class="quick-view-btn" data-id="cheese-crackers">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 25 -->
+            <div class="snack-item" data-name="Keebler Chocolate Chip Cookies" data-price="1.25"
+                data-category="cookies">
+                <img src="snacks\keeb.jpg" alt="Keebler Chocolate Chip Cookies" class="snack-image">
+                <h3 class="snack-name">Keebler Chocolate Chip Cookies</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="keebler-cookies">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 26 -->
+            <div class="snack-item" data-name="Rice Krispie Treats" data-price="1.25" data-category="cookies">
+                <img src="snacks\rice.avif" alt="Rice Krispie Treats" class="snack-image">
+                <h3 class="snack-name">Rice Krispie Treats</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="rice-krispie-treats">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 27 -->
+            <div class="snack-item" data-name="Oreos" data-price="1.25" data-category="cookies">
+                <img src="snacks\oreo.webp" alt="Oreos" class="snack-image">
+                <h3 class="snack-name">Oreos</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="oreos">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 28 -->
+            <div class="snack-item" data-name="Nature Valley Bars" data-price="1.50" data-category="cookies">
+                <img src="snacks\nature.jpeg" alt="Nature Valley Bars" class="snack-image">
+                <h3 class="snack-name">Nature Valley Bars</h3>
+                <p class="snack-price">$1.50</p>
+                <button class="quick-view-btn" data-id="nature-valley-bars">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 29 -->
+            <div class="snack-item" data-name="Chocolate Sugar Wafers" data-price="1.25"
+                data-category="cookies">
+                <img src="snacks\keebler.png" alt="Sugar Wafers" class="snack-image">
+                <h3 class="snack-name">Chocolate Sugar Wafers</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="sugar-wafers">Nutrition Facts</button>
+            </div>
+
+            <div class="snack-item" data-name="Vanilla Sugar Wafers" data-price="1.25"
+            data-category="cookies">
+            <img src="snacks\keebla.webp" alt="Sugar Wafers" class="snack-image">
+            <h3 class="snack-name"> Vanilla Sugar Wafers</h3>
+            <p class="snack-price">$1.25</p>
+            <button class="quick-view-btn" data-id="sugar-wafers">Nutrition Facts</button>
+        </div>
+            <!-- Snack Item 30 -->
+            <div class="snack-item" data-name="Nutri Grain Bars" data-price="1.50" data-category="cookies">
+                <img src="snacks\nutri.jpg" alt="Nutri Grain Bars" class="snack-image">
+                <h3 class="snack-name">Nutri Grain Bars</h3>
+                <p class="snack-price">$1.50</p>
+                <button class="quick-view-btn" data-id="nutri-grain-bars">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 31 -->
+       
+            <!-- Snack Item 32 -->
+            <div class="snack-item" data-name="Clif Bar" data-price="2.50" data-category="cookies">
+                <img src="snacks\clif.webp" alt="Clif Bar" class="snack-image">
+                <h3 class="snack-name">Clif Bar</h3>
+                <p class="snack-price">$2.50</p>
+                <button class="quick-view-btn" data-id="clif-bar">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 33 -->
+            <div class="snack-item" data-name="Ritz Crackers " data-price="1.25" data-category="chips">
+                <img src="snacks\ritz.webp" alt="Ritz Crackers" class="snack-image">
+                <h3 class="snack-name">Ritz Crackers</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="ritz-crackers">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 34 -->
+            <div class="snack-item" data-name="MET-Rx Bars" data-price="3.00" data-category="cookies">
+                <img src="snacks\met.webp" alt="MET-Rx Bars" class="snack-image">
+                <h3 class="snack-name">MET-Rx Bars</h3>
+                <p class="snack-price">$3.00</p>
+                <button class="quick-view-btn" data-id="metrx-bars">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 35 -->
+            <div class="snack-item" data-name="Kettle Potato Chips" data-price="1.75" data-category="chips">
+                <img src="snacks\kettle.webp" alt="Kettle Potato Chips" class="snack-image">
+                <h3 class="snack-name">Kettle Potato Chips</h3>
+                <p class="snack-price">$1.75</p>
+                <button class="quick-view-btn" data-id="kettle-chips">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 36 -->
+            <div class="snack-item" data-name="Cape Cod Chips" data-price="1.75" data-category="chips">
+                <img src="snacks\cape.jpg" alt="Cape Cod Chips" class="snack-image">
+                <h3 class="snack-name">Cape Cod Chips</h3>
+                <p class="snack-price">$1.75</p>
+                <button class="quick-view-btn" data-id="cape-cod-chips">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 37 -->
+            <div class="snack-item" data-name="Dorito Cool Ranch" data-price="1.50" data-category="chips">
+                <img src="snacks\cool-ranch.webp" alt="Dorito Cool Ranch" class="snack-image">
+                <h3 class="snack-name">Dorito Cool Ranch</h3>
+                <p class="snack-price">$1.50</p>
+                <button class="quick-view-btn" data-id="dorito-cool-ranch">Nutrition Facts</button>
+            </div>
+            
+            <!-- Snack Item 38 -->
+            <div class="snack-item" data-name="Pringles" data-price="1.50" data-category="chips">
+                <img src="snacks\pringle.avif" alt="Pringles" class="snack-image">
+                <h3 class="snack-name">Pringles</h3>
+                <p class="snack-price">$1.50</p>
+                <button class="quick-view-btn" data-id="pringles">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 39 -->
+
+            <!-- Snack Item 40 -->
+            <div class="snack-item" data-name="Cheddar Fries" data-price="1.25" data-category="chips">
+                <img src="snacks\cheddar.jpg" alt="Cheddar Fries" class="snack-image">
+                <h3 class="snack-name">Cheddar Fries</h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="cheddar-fries">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 41 -->
+            <div class="snack-item" data-name="Red Doritos" data-price="1.50" data-category="chips">
+                <img src="snacks\dorito.webp" alt="Red Doritos" class="snack-image">
+                <h3 class="snack-name">Doritos Nacho Cheese</h3>
+                <p class="snack-price">$1.50</p>
+                <button class="quick-view-btn" data-id="red-doritos">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 42 -->
+            <div class="snack-item" data-name="Tic Tacs " data-price="1.00"
+                data-category="candy">
+                <img src="snacks\tic.png" alt="Tic Tacs" class="snack-image">
+                <h3 class="snack-name">Tic Tacs </h3>
+                <p class="snack-price">$1.00</p>
+                <button class="quick-view-btn" data-id="tic-tacs">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 43 -->
+            <div class="snack-item" data-name="Extra Gum (Multiple Flavors)" data-price="1.25" data-category="gum">
+                <img src="/api/placeholder/150/150" alt="Extra Gum" class="snack-image">
+                <h3 class="snack-name">Extra Gum </h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="extra-gum">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 44 -->
+            <div class="snack-item" data-name="Trident Gum (Multiple Flavors)" data-price="1.25" data-category="gum">
+                <img src="/api/placeholder/150/150" alt="Trident Gum" class="snack-image">
+                <h3 class="snack-name">Trident Gum </h3>
+                <p class="snack-price">$1.25</p>
+                <button class="quick-view-btn" data-id="trident-gum">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 45 -->
+            <div class="snack-item" data-name="Bazooka Gum" data-price="0.75" data-category="gum">
+                <img src="/api/placeholder/150/150" alt="Bazooka Gum" class="snack-image">
+                <h3 class="snack-name">Bazooka Gum</h3>
+                <p class="snack-price">$0.75</p>
+                <button class="quick-view-btn" data-id="bazooka-gum">Nutrition Facts</button>
+            </div>
+            <!-- Snack Item 46 -->
+            <div class="snack-item" data-name="Double Mint Gum" data-price="1.00" data-category="gum">
+                <img src="/api/placeholder/150/150" alt="Double Mint Gum" class="snack-image">
+                <h3 class="snack-name">Double Mint Gum</h3>
+                <p class="snack-price">$1.00</p>
+                <button class="quick-view-btn" data-id="double-mint-gum">Nutrition Facts</button>
+            </div>
+        </div>
+        <div class="no-results" style="display:none;">No snacks found.</div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="modal-product">
+                <img src="" alt="" class="modal-product-image" id="modalImage">
+                <div class="modal-product-info">
+                    <h2 class="modal-product-name" id="modalName"></h2>
+                    <p class="modal-product-price" id="modalPrice"></p>
+                    <p class="modal-product-description" id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">&#8679;</div>
+
+    <footer>
+        &copy; 2025 The Madison Variety. All rights reserved.
+    </footer>
+    <script src="java\snacks.js"></script>
+</body>
+
+</html>
