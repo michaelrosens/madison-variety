@@ -1,0 +1,476 @@
+/* Base Styles - Keeping the same as lottery.css */
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    background: linear-gradient(135deg, #f8f9fa, #ffe6f0);
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Bodoni Poster';
+    src: url('Bodoni Poster/Bodoni Poster.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    height: 70px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.hours-info {
+    text-align: center;
+    padding: 0 10px;
+    border-left: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.hours-info:hover {
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.hours-info p {
+    margin: 4px 0;
+    font-size: 0.95em;
+    color: #495057;
+    font-family: "Bodoni Moda", serif;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.hours-info strong {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.contact-info {
+    text-align: right;
+    padding-left: 20px;
+}
+
+.contact-info p {
+    margin: 4px 0;
+    font-size: 0.95em;
+    color: #495057;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.contact-info p:hover {
+    color: #2c3e50;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.contact-info a:hover {
+    color: #2980b9;
+}
+
+.contact-info a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.contact-info a:hover::after {
+    width: 100%;
+}
+
+.date {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.95em;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+.text-nav {
+    display: flex;
+    background: #2c3e50;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover {
+    color: #fff;
+}
+
+.nav-item:hover::after {
+    width: 80%;
+}
+
+/* Main Content Styles for Newspapers */
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Newspaper Hero Section */
+.newspaper-hero {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.newspaper-hero h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.newspaper-hero p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color: #495057;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Newspaper Banner */
+.newspaper-banner {
+    background: linear-gradient(135deg, #2c3e50, #4a6c8a);
+    color: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.banner-content h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2.2em;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    margin: 10px 0 0;
+    opacity: 0.9;
+}
+
+/* Newspaper Grid */
+.newspaper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.newspaper-card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.newspaper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.newspaper-image {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+    overflow: hidden;
+    position: relative;
+}
+
+.newspaper-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.newspaper-card:hover .newspaper-image img {
+    transform: scale(1.05);
+}
+
+.newspaper-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.newspaper-info h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin: 0 0 10px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.newspaper-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95em;
+    color: #495057;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.newspaper-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.newspaper-available {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    color: #6c757d;
+    font-style: italic;
+    margin: 5px 0 0;
+}
+
+/* Special Editions Section */
+.special-editions {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.special-editions h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.special-editions h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #2c3e50;
+    margin: 10px auto 0;
+}
+
+.special-editions-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.special-edition-item {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #2c3e50;
+    transition: transform 0.3s ease;
+}
+
+.special-edition-item:hover {
+    transform: translateY(-3px);
+}
+
+.special-edition-item h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.3em;
+    color: #2c3e50;
+    margin: 0 0 10px;
+}
+
+.special-edition-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95em;
+    color: #495057;
+    margin: 0 0 10px;
+}
+
+.special-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 10px 0 0;
+}
+
+/* Magazine Notice */
+.magazine-notice {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.magazine-notice h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.magazine-notice p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    color: #495057;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2c3e50;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .hours-info, .contact-info {
+        margin-top: 15px;
+        text-align: center;
+        border: none;
+        padding: 0;
+    }
+
+    .contact-info {
+        padding-left: 0;
+    }
+
+    .newspaper-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .text-nav {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .newspaper-banner .banner-content h2 {
+        font-size: 1.8em;
+    }
+
+    .special-editions-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .newspaper-card {
+        min-width: 100%;
+    }
+
+    .newspaper-hero h1 {
+        font-size: 2em;
+    }
+
+    .newspaper-banner .banner-content h2 {
+        font-size: 1.5em;
+    }
+}
