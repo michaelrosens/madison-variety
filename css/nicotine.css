@@ -52,14 +52,6 @@ body {
     border-radius: 8px;
 }
 
-.hours-info p {
-    margin: 4px 0;
-    font-size: 0.95em;
-    color: #495057;
-    font-family: "Bodoni Moda", serif;
-    line-height: 1.4;
-    transition: color 0.3s ease;
-}
 
 .hours-info strong {
     font-family: 'Poppins', sans-serif;
@@ -394,6 +386,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 @font-face {
@@ -443,7 +436,6 @@ body {
     margin: 4px 0;
     font-size: 0.95em;
     color: #495057;
-    font-family: "Bodoni Moda", serif;
     line-height: 1.4;
     transition: color 0.3s ease;
 }
