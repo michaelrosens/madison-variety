@@ -1,31 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Update clock function
-  function updateClock() {
-      const now = new Date();
-      const dateOptions = { 
-          year: 'numeric', 
-          month: 'long', 
-          day: 'numeric' 
-      };
-      const timeOptions = {
-          hour: '2-digit',
-          minute: '2-digit',
-          second: '2-digit',
-          hour12: false
-      };
-      
-      const dateString = now.toLocaleDateString('en-US', dateOptions);
-      const timeString = now.toLocaleTimeString('en-US', timeOptions);
-      
-      document.getElementById('clock').textContent = `${dateString} | ${timeString}`;
-  }
-  
-  // Initialize clock
-  updateClock();
-  
-  // Update clock every second
-  setInterval(updateClock, 1000);
-  
+
   // Hide option section for drinks with only one type
   const singleTypeDrinks = document.querySelectorAll('.drink-card[data-single-type="true"]');
   singleTypeDrinks.forEach(card => {
