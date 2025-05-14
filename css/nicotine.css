@@ -321,6 +321,183 @@ body {
     border: 1px solid #f5c6cb;
 }
 
+
+/* Age Verification Overlay Styles */
+/* Age Verification Overlay Styles */
+.age-verification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.overlay-content {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.overlay-content::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 80px;
+    height: 80px;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.overlay-content::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 60px;
+    height: 60px;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.overlay-content h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.overlay-content p {
+    color: #495057;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.disclaimer-text {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #6c757d;
+    border-top: 1px solid #e9ecef;
+    padding-top: 15px;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-30px); }
+}
+
+/* Utility classes */
+.hidden {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .overlay-content {
+        padding: 25px;
+    }
+    
+    .overlay-content h2 {
+        font-size: 1.5em;
+    }
+    
+    .overlay-content p {
+        font-size: 1em;
+    }
+}
+/* Animation for the overlay appearance */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Hide scrollbar when overlay is active */
+body.has-overlay {
+    overflow: hidden;
+}
+
+/* Result message styling in overlay */
+#overlay-result.result-message {
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+#overlay-result.result-message.show {
+    opacity: 1;
+    height: auto;
+    margin-top: 15px;
+}
+
+#overlay-result.result-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#overlay-result.result-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .overlay-content {
+        padding: 25px;
+        width: 95%;
+    }
+    
+    .overlay-content h2 {
+        font-size: 1.5em;
+    }
+    
+    .overlay-content p {
+        font-size: 1em;
+    }
+    
+    .overlay-form .date-input,
+    .overlay-form .verify-button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
 /* Cigarette Brands Section */
 .cigarette-brands-section {
     text-align: center;
